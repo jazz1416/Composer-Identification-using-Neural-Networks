@@ -87,7 +87,13 @@ Our notebook follows the following structure:
 ---
 
 ## Results
-add later
+$\quad$ The results of this project are two sets of neural network models, trained to predict a composer from a list composed of Bach, Mozart, Chopin, or Beethoven, based on sheet music. The two sets of models are composed of one trained and one untrained version of either a CNN or LSTM model.
+
+
+$\quad$ Through hyperparameter tuning using a Keras built in tuner, we were able to slightly improve the performance of both models. The LSTM hyperparameter tuning involved trying different units for the LSTM units, dropout values, activation function choices, dense neuron values, and learning rate. Each of these values were chosen from a list of possible options that the tuner was to filter through and determine which values created the highest accuracy. As a result, some evaluation metrics decreased, while others increased, but the overall accuracy slightly increased. For the different composers, Mozart had a slight drop in recall, but saw improvement in recall and f1, while Chopin and Bach saw an increase in both. Beethoven had mixed results, as the recall slightly decreased, but the precision slightly increased. The overall accuracy for each model went from 0.639 to 0.691, however, indicating that the model performance very slightly increased. 
+
+
+$\quad$ The CNN model was harder to tune. We tuned factors such as the initial convolution filter value, the number of convolution blocks, the activation function used, the dropout value, the number of dense layers, dense neuron values, and the learning rate. As a result, the overall accuracy also slightly increased from 0.657 to 0.671. Compared to the untuned version, most precision and recall values increased aside from Beethoven's precision slightly decreased as well as Mozart and Chopin's recall scoes.
 
 ---
 
