@@ -1,5 +1,5 @@
 # Composer-Identification-using-Neural-Networks
-**AAI511 - Neural Networks and Deep Learning**
+**AAI-511-02 - Neural Networks and Deep Learning**
 **Final Team Project**
 
 
